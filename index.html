@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Anahi Mojica Fernández">
+        <link href="style/bootstrap-5.3.0-dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="style/otherStyle.css" rel="stylesheet" type="text/css"/>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Tilt+Prism&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Tilt+Prism&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lora&family=Roboto+Slab&family=Tilt+Prism&display=swap" rel="stylesheet">
+    </head>
+    <body class="body">
+        <div class="container-fluid">
+            <nav class="nav-bar navbar navbar-expand-lg navbar-dark fixed-top">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="javascript:void(0)">
+                        <img src="img/LOGO.png" height="50" alt="pez" loading="lazy">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="mynavbar">
+                        <ul class="navbar-nav me-auto">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Acuarios</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#rectangular">Rectangular</a></li>
+                                    <li><a class="dropdown-item" href="#cuadrado">Cuadrado</a></li>
+                                    <li><a class="dropdown-item" href="#cilindrico">Cilíndrico</a></li>
+                                    <li><a class="dropdown-item" href="#esferico">Esférico</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Peceras</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#panoramicaTri">Panorámica triangular</a></li>
+                                    <li><a class="dropdown-item" href="#panoramicaRec">Panorámica rectangular</a></li>
+                                    <li><a class="dropdown-item" href="#semicircular">Semicircular</a></li>
+                                    <li><a class="dropdown-item" href="#triangular">Triangular</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <form class="d-flex">
+                            <input class="form-control me-2" type="text" placeholder="Buscar">
+                            <button class="btn btn-primary bg-black" type="button">Buscar</button>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+
+        </div>
+        <br>
+        <div class="titulo espacio">Acuarios Mojica</div><br>
+        <h2 class="h2 text-center"><strong>¿Cómo calcular los litros de un acuario/pecera?</strong><br>Elementos a considerar:</h2><br>
+        <div class="txt text-center">
+            <p>1) El largo, ancho y alto de la pecera se miden desde los bordes internos del vidrio, para eliminar del cálculo el volumen del grueso del cristal.<br>
+                2) El volumen teórico que te salga, se verá reducido en torno a un 25% o más después de introducir sustrato, decoración, plantas, calentador, etc. 
+        </div>
+
+        <h3 class="h3 text-center subr"><strong>Acuarios</strong></h3><br>
+
+        <div style="padding: 10px; margin: 30px; text-align: center;">
+            <di class="bg-white">
+                <h2 id="rectangular" class="text-center">Rectangular</h2>
+                <img class= "image" src="img/Rectangular_1.png" alt="acuarioRectangular"/>
+        </div>
+        <div style="border: solid black 5px; border-radius: 5px; padding: 10px; margin: 30px; text-align: center">
+            <p>Para calcular los litros de un acuario rectangular, sólo necesitas saber el largo, el ancho y el alto (en cm) de la pecera.<br>
+                L x An x Al = volumen acuario en cm cúbicos (cm³). </p>
+
+            <form>    
+                <label class= "m-3">Ingresa el largo: </label>
+                <input type="text" id="txtLargo1">
+                <label class= "m-3">Ingresa el alto:</label>
+                <input type="text" id="txtAlto1">
+                <label class= "m-3">Ingresa el ancho:</label>
+                <input type="text" id="txtAncho1">
+                <button class= "m-2" onclick="rectangular()">Calcular</button>
+            </form>
+        </div>
+
+        <div style="padding: 10px; margin: 30px; text-align: center;">
+            <di class="bg-white">
+                <h2 id="cuadrado" class="text-center">Cuadrado</h2>
+                <img class= "image" src="img/Cuadrado.png" alt="acuarioCuadrado"/>
+        </div>
+        <div style="border: solid black 5px; border-radius: 5px; padding: 10px; margin: 30px; text-align: center">
+            <p>Para calcular los litros de un acuario rectangular, sólo necesitas saber el largo, el ancho y el alto (en cm) de la pecera.<br>
+                L x An x Al = volumen acuario en cm cúbicos (cm³). </p>
+
+            <form>    
+                <label class= "m-3">Ingresa el largo:</label>
+                <input type="text" id="txtLado">
+                <label class= "m-3">Ingresa el alto:</label>
+                <input type="text" id="txtLado">
+                <label class= "m-3">Ingresa el ancho:</label>
+                <input type="text" id="txtLado">
+                <button class= "m-2" onclick="cuadrado()">Calcular</button>
+            </form>
+        </div>
+
+        <div style="padding: 10px; margin: 30px; text-align: center;">
+            <di class="bg-white">
+                <h2 id="cilindrico" class="text-center">Cilíndrico</h2>
+                <img class= "image2" src="img/Cilindrico.png" alt="acuarioCilindrico"/>
+        </div>
+
+        <div style="border: solid black 5px; border-radius: 5px; padding: 10px; margin: 30px; text-align: center">
+            <p>Necesitas saber la altura del acuario y el radio del cilindro. El radio es la distancia desde el centro de una de las bases del cilindro hasta la pared de la urna.<br> 
+                La fórmula es: Volumen acuario cilíndrico = altura · pi · r². </p>
+
+            <form>    
+                <label class= "m-3">Ingresa el alto:</label>
+                <input type="text" id="txtAltura">
+                <label class= "m-3">Ingresa el radio:</label>
+                <input type="text" id="txtRadio1">
+                <button id="enviarcilindro" class= "m-2" onclick="cilindrico()">Calcular</button>
+            </form>
+        </div>
+
+
+        <div style="padding: 10px; margin: 30px; text-align: center;">
+            <di class="bg-white">
+                <h2 id="esferico" class="text-center">Esférico</h2>
+                <img class= "image2" src="img/Esferico.png" alt="acuarioEsferico"/>
+        </div>
+
+        <div style="border: solid black 5px; border-radius: 5px; padding: 10px; margin: 30px; text-align: center">
+            <p>Para calcular los litros de un acuario esférico (la típica bola de cristal) sólo necesitamos saber el radio de la pecera. Para medir el radio cogeremos un metro o <br>
+                una regla y apuntaremos los cm que hay desde el centro de la urna hasta el fondo de la mcommentisma. 
+                Aplicamos la siguiente fórmula: V = (67/16)(r^3) </p>
+
+            <form>    
+                <label class= "m-3">Ingresa el radio:</label>
+                <input type="text" id="txtRadio2">
+                <button class= "m-2" onclick="esferico()">Calcular</button>
+            </form>
+        </div>
+
+        <h3 class="h3 text-center subr"><strong>Peceras</strong></h3><br>
+
+        <div style="padding: 10px; margin: 30px; text-align: center;">
+            <di class="bg-white">
+                <h2 id="panoramicaTri" class="text-center">Panorámica triangular</h2>
+                <img class= "image2" src="img/Pano.png" alt="acuarioPanoramico"/>
+        </div>
+
+        <div style="border: solid black 5px; border-radius: 5px; padding: 10px; margin: 30px; text-align: center">
+            <p>Necesitas saber la altura del acuario y el radio del cilindro. El radio es la distancia desde el centro de una de las bases del cilindro hasta la pared de la urna.<br> 
+                La fórmula es: Volumen acuario cilíndrico = (altura · pi · r²)/4.</p>
+
+            <form>    
+                <label class= "m-3">Ingresa el alto:</label>
+                <input type="text" id="txtAltura3">
+                <label class= "m-3">Ingresa el radio:</label>
+                <input type="text" id="txtRadio3">
+                <button class= "m-2" onclick="panTri()">Calcular</button>
+            </form>
+        </div>
+
+        <div style="padding: 10px; margin: 30px; text-align: center;">
+            <di class="bg-white">
+                <h2 id="panoramicaRec" class="text-center">Panorámica rectangular</h2>
+                <img class= "image" src="img/PanoRec.png" alt="acuarioPanoRectangular"/>
+        </div>
+
+        <div style="border: solid black 5px; border-radius: 5px; padding: 10px; margin: 30px; text-align: center">
+            <p>Una aproximación podría ser dividir el acuario en 2 figuras distintas. Calcularíamos primero el volumen del rectángulo resultante, 
+                y después el volumen del semicírculo<br> frontal. Medimos la altura, anchura y largo de la pieza rectangular Dividimos el largo del acuario 
+                entre 2 y ya tenemos el radio del semicírculo frontal. Con estos datos<br> podemos calcular el volumen de la pieza rectangular del acuario.<br><br>
+                Y el volumen del semicírculo frontal = (altura · pi · r²) / 2 <br> Volumen acuario panorámico total = Volumen rectángulo + volumen semicírculo
+            </p>
+
+            <form>    
+                <label class= "m-3">Ingresa el largo:</label>
+                <input type="text" id="txtLargo4">
+                <label class= "m-3">Ingresa el alto:</label>
+                <input type="text" id="txtAltura4">
+                <label class= "m-3">Ingresa el ancho:</label>
+                <input type="text" id="txtAnchura4">
+                <button class= "m-2" onclick="panRec()">Calcular</button>
+            </form>
+        </div>
+
+        <div style="padding: 10px; margin: 30px; text-align: center;">
+            <div class="bg-white">
+                <h2 id="semicircular" class="text-center">Semicircular</h2>
+                <img class= "image2" src="img/SemiCil.png" alt="acuarioSemiCircular weh"/>
+            </div>
+
+            <div style="border: solid black 5px; border-radius: 5px; padding: 10px; margin: 30px; text-align: center">
+                <p>Necesitas saber la altura del acuario y el radio del cilindro. El radio es la distancia desde el centro de una de las bases del cilindro hasta la pared de la urna.<br> 
+                    La fórmula es: Volumen acuario cilíndrico = (altura · pi · r²)/2.</p>
+
+                <form>    
+                    <label class= "m-3">Ingresa el alto:</label>
+                    <input type="text" id="txtAltura5">
+                    <label class= "m-3">Ingresa el radio:</label>
+                    <input type="text" id="txtRadio5">
+                    <button type="button" id="enviarSemi" class= "m-2" onclick="semiCir()">Calcular</button>
+                </form>
+            </div>
+
+            <div style="padding: 10px; margin: 30px; text-align: center;">
+                <di class="bg-white">
+                    <h2 id="triangular" class="text-center">Triangular</h2>
+                    <img class= "image2" src="img/Triangular.png" alt="acuarioTriangular"/>
+            </div>
+
+            <div style="border: solid black 5px; border-radius: 5px; padding: 10px; margin: 30px; text-align: center">
+                <p>La fórmula sería sencilla: (Alto · Ancho · Largo) / 2. </p>
+
+                <form>    
+                    <label class= "m-3">Ingresa el largo: </label>
+                    <input type="text" id="txtNum1"/>
+                    <label class= "m-3">Ingresa el alto:</label>
+                    <input type="text" id="txtNum2"/>
+                    <label class= "m-3">Ingresa el ancho:</label>
+                    <input type="text" id="txtNum3"/>
+                    <button class= "m-2" onclick="triangular()">Calcular</button>
+                </form>
+            </div>
+            <footer class="kawaii-footer bg-k">
+                <p>@AnahiMojicaFernández</p>
+                <p>Contacto: anahifernandez2003@gmail.com</p>
+                <p>¡Síguenos en las redes sociales!</p>
+                <img src="img/INSTA.png" alt="Icono de instagram">
+                <img src="img/FACE.png" alt="Icono de facebook">
+            </footer>
+            <script src="js/funciones.js">
+            </script>
+    </body>
+</html>

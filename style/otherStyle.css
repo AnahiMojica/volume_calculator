@@ -1,0 +1,68 @@
+
+/* 
+    Created on : 18 jun 2023, 15:37:45
+    Author     : anahi
+*/
+.body{
+    background-color: white;
+}
+
+.nav-bar{
+    background-color:#00a3a6;
+    color: black;
+}
+
+.nav-bar li,.nav-bar li a{
+    display: inline-block;
+    list-style: none;
+    font-family: 'Roboto Slab', serif;
+    text-decoration: none;
+    color: black;
+    padding: 10px 50px 10px 15px;
+}
+
+.nav-bar li a:hover{
+    font-size: 16px;
+}
+
+.titulo{
+    text-align:center;
+    font-family: 'Tilt Prism', cursive;
+    color:#0a0c0d;
+    font-size:70px;
+}
+
+.subr{
+    background-color:#7ebeb2;
+    color:black;
+    margin:auto;
+    font-size: 50px;
+}
+
+.txt{
+    font-family: 'Lora', serif;
+}
+
+.image{
+    width: 600px;
+}
+
+.image2{
+    width: 450px;
+    height: 450px;
+}
+
+.espacio{
+    padding-top: 50px;
+}
+
+.kawaii-footer {
+    background-color:#00a3a6;
+    padding: 2px;
+    text-align: center;
+}
+.kawaii-footer img {
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+}
